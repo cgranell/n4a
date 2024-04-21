@@ -1,0 +1,73 @@
+---
+title: "01 Hello Quarto Notebooks"
+subtitle: "Notebooks for Academics"
+description: "Expand the use of notebooks to various types of academic activities"
+author: "Carlos Granell"
+institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
+date: last-modified
+date-format: "MMM D, YYYY"
+categories: [slides]
+image: featured.jpeg
+image-alt: "Quarto is the open-source scientific and technical publishing system of choice in this course"
+
+format: 
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    progress: true
+    logo: ../../images/ESCOLA-DOCTORAT-es-negre.png
+    footer: "[cgranell.github.io/n4a](https://cgranell.github.io/n4a)"
+    theme: default  # theme: dark
+    transition: fade
+    preview-links: true
+    author-meta: "Carlos Granell"
+    date-meta: "21/04/2024"
+    chalkboard: 
+      theme: whiteboard
+      buttons: false
+      boardmarker-width: 3
+execute:
+  echo: true
+
+---
+
+# What do *Notebooks* means? {background-color="#4f6952"}
+
+## Literate programming [@knuth1984]
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### [Prose & code together](http://www.literateprogramming.com/) 
+
+Code embedded within the program's documentation as opposed to documentation embedded within code.
+
+
+::: 
+
+::: {.column width="50%" style="text-align: center"}
+
+![](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg)
+
+
+[Donald E Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
+
+:::
+::::
+
+
+## Dynamic documentation (Act III)
+
+https://github.com/cgranell/rrp-uji/blob/main/slides/slides11_01.Rmd
+
+## Electronic documents give reproducible research a new meaning (Claerbout)
+
+https://github.com/cgranell/rrp-uji/blob/main/slides/slides11_01.Rmd
+
+
+# What do *Notebooks for Academics* mean? {background-color="#4f6952"}
+
+
+
+# References

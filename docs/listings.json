@@ -1,6 +1,9 @@
 [
   {
     "listing": "/index.html",
-    "items": []
+    "items": [
+      "/materials/01-intro-slides/index.html",
+      "/materials/02-demo-template/index.html"
+    ]
   }
 ]

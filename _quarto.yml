@@ -27,7 +27,7 @@ website:
 
     right:
       - href: https://quarto.org/
-        text: "Quarto"
+        aria-label: Quarto
       - icon: github
         href: https://www.github.com/cgranell/n4a
 
@@ -35,7 +35,7 @@ website:
 format:
   html:
     theme:
-      light: united
+      light: cosmo
       dark: darkly
     toc: true
 
