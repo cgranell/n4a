@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Notebooks for Academics'24"
+  description: "Notebooks for Academics (N4A)"
+  site-url: "https://cgranell.github.io/n4a"
+  repo-url: "https://github.com/cgranell/n4a"
+
+  page-footer:
+    left: "[cgranell.github.io/n4a](https://cgranell.github.io/n4a)"
+    right:
+    - text: "License"
+      href: LICENSE.md
+    - text: "Code of Conduct"
+      href: CODE_OF_CONDUCT.md
+
+  navbar:
+    logo: "images/ESCOLA-DOCTORAT-es-blanco.png"
+    logo-alt: "Escola de Doctorat, UJI"
+    logo-href: "https://www.uji.es/estudis/centres/escola-doctorat/base/arxiu/Formacio-transversal/23-24/recerca/reproducible/"
+
+    left:
+      - href: index.qmd
+        text: Overview
+
+    right:
+      - href: https://quarto.org/
+        text: "Quarto"
+      - icon: github
+        href: https://www.github.com/cgranell/n4a
+
+
+format:
+  html:
+    theme:
+      light: united
+      dark: darkly
+    toc: true
+
+bibliography: references.bib
+citations-hover: true
+citation-location: document

@@ -1,0 +1,10 @@
+---
+listing:
+  contents: materials
+  sort: "date desc"
+  type: grid
+  categories: true
+  fields: [image, date, title, description]
+page-layout: full
+title-block-banner: true
+---
