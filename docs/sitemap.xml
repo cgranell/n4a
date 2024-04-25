@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cgranell.github.io/n4a/CODE_OF_CONDUCT.html</loc>
-    <lastmod>2024-04-25T12:58:26.941Z</lastmod>
+    <lastmod>2024-04-25T13:10:50.195Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/n4a/index.html</loc>
-    <lastmod>2024-04-25T12:58:27.847Z</lastmod>
+    <lastmod>2024-04-25T13:10:51.199Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/n4a/LICENSE.html</loc>
-    <lastmod>2024-04-25T12:58:29.001Z</lastmod>
+    <lastmod>2024-04-25T13:11:09.443Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/n4a/materials/01-intro-slides/index.html</loc>
-    <lastmod>2024-04-25T12:58:29.692Z</lastmod>
+    <lastmod>2024-04-25T13:10:52.867Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/n4a/materials/02-demo-template/index.html</loc>
-    <lastmod>2024-04-25T12:58:31.273Z</lastmod>
+    <lastmod>2024-04-25T13:10:54.405Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cgranell.github.io/n4a/materials/03-document/index.html</loc>
+    <lastmod>2024-04-25T13:10:54.918Z</lastmod>
   </url>
 </urlset>

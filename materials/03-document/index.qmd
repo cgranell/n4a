@@ -1,0 +1,12 @@
+---
+title: "03 Quarto Document using `plamerpenguins`"
+subtitle: "Notebooks for Academics"
+description: "`palmerpenguins` is a great dataset for data exploration & visualization"
+author: "Carlos Granell"
+date: last-modified
+date-format: "MMM D, YYYY"
+categories: [guided-example]
+image: featured.png
+fields: [image, title, subtitle, reading-time, categories, description, date, abstract]
+code-overflow: wrap
+---

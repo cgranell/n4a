@@ -17,9 +17,9 @@ website:
       href: CODE_OF_CONDUCT.md
 
   navbar:
-    logo: "images/ESCOLA-DOCTORAT-es-blanco.png"
+    logo: "images/ESCOLA-DOCTORAT-es-negre.png"
     logo-alt: "Escola de Doctorat, UJI"
-    logo-href: "https://www.uji.es/estudis/centres/escola-doctorat/base/arxiu/Formacio-transversal/23-24/recerca/reproducible/"
+    logo-href: "https://www.uji.es/estudis/centres/escola-doctorat/base/arxiu/Formacio-transversal/23-24/recerca/notebooks/"
 
     left:
       - href: index.qmd

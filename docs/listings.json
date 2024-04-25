@@ -3,7 +3,8 @@
     "listing": "/index.html",
     "items": [
       "/materials/01-intro-slides/index.html",
-      "/materials/02-demo-template/index.html"
+      "/materials/02-demo-template/index.html",
+      "/materials/03-document/index.html"
     ]
   }
 ]

@@ -1,7 +1,7 @@
 ---
 title: "02 Quarto Document and Presentation"
 subtitle: "Notebooks for Academics"
-description: "Notebook demo based on the 'Quarto document publising with RStudio' template using Posit Cloud"
+description: "Notebook demo based on the 'Quarto document publishing with RStudio' template using Posit Cloud"
 author: "Carlos Granell"
 date: last-modified
 date-format: "MMM D, YYYY"

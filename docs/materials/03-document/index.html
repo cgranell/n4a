@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Carlos Granell">
-<meta name="description" content="Notebook demo based on the ‘Quarto document publishing with RStudio’ template using Posit Cloud">
+<meta name="description" content="palmerpenguins is a great dataset for data exploration &amp; visualization">
 
-<title>Notebooks for Academics’24 - 02 Quarto Document and Presentation</title>
+<title>Notebooks for Academics’24 - 03 Quarto Document using plamerpenguins</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -148,35 +114,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#create-an-rstudio-project-on-posit-cloud-using-an-existing-template" id="toc-create-an-rstudio-project-on-posit-cloud-using-an-existing-template" class="nav-link active" data-scroll-target="#create-an-rstudio-project-on-posit-cloud-using-an-existing-template">Create an RStudio Project on Posit Cloud using an existing template</a></li>
-  <li><a href="#browse-the-files-contained-in-the-project" id="toc-browse-the-files-contained-in-the-project" class="nav-link" data-scroll-target="#browse-the-files-contained-in-the-project">Browse the files contained in the project</a></li>
-  <li><a href="#render-a-quarto-document" id="toc-render-a-quarto-document" class="nav-link" data-scroll-target="#render-a-quarto-document">Render a Quarto document</a></li>
-  <li><a href="#inspect-a-quarto-document" id="toc-inspect-a-quarto-document" class="nav-link" data-scroll-target="#inspect-a-quarto-document">Inspect a Quarto document</a></li>
-  <li><a href="#add-new-options-to-the-yaml-header" id="toc-add-new-options-to-the-yaml-header" class="nav-link" data-scroll-target="#add-new-options-to-the-yaml-header">Add new options to the YAML header</a></li>
-  <li><a href="#inspect-a-quarto-presentation" id="toc-inspect-a-quarto-presentation" class="nav-link" data-scroll-target="#inspect-a-quarto-presentation">Inspect a Quarto presentation</a></li>
-  <li><a href="#render-a-quarto-document-1" id="toc-render-a-quarto-document-1" class="nav-link" data-scroll-target="#render-a-quarto-document-1">Render a Quarto document</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">02 Quarto Document and Presentation</h1>
+<h1 class="title">03 Quarto Document using <code>plamerpenguins</code></h1>
 <p class="subtitle lead">Notebooks for Academics</p>
   <div class="quarto-categories">
-    <div class="quarto-category">demo</div>
+    <div class="quarto-category">guided-example</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Notebook demo based on the ‘Quarto document publishing with RStudio’ template using Posit Cloud
+    <code>palmerpenguins</code> is a great dataset for data exploration &amp; visualization
   </div>
 </div>
 
@@ -203,158 +157,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="create-an-rstudio-project-on-posit-cloud-using-an-existing-template" class="level3">
-<h3 class="anchored" data-anchor-id="create-an-rstudio-project-on-posit-cloud-using-an-existing-template">Create an RStudio Project on Posit Cloud using an existing template</h3>
-<ul>
-<li>In <strong>Your Workspace</strong>, click <em>New Project &gt; New Project from Template</em></li>
-<li>Select <em>Quarto Document Publishing with RStudio</em></li>
-<li>Explore panes/views and main functions of the Posit Cloud’s UI</li>
-</ul>
-</section>
-<section id="browse-the-files-contained-in-the-project" class="level3">
-<h3 class="anchored" data-anchor-id="browse-the-files-contained-in-the-project">Browse the files contained in the project</h3>
-<ul>
-<li>Quarto document: <code>colors_document.qmd</code></li>
-<li>Quarto presentation: <code>colors-presentation.qmd</code></li>
-<li>Interactive application based on Shiny: <code>colors_app.qmd</code></li>
-</ul>
-</section>
-<section id="render-a-quarto-document" class="level3">
-<h3 class="anchored" data-anchor-id="render-a-quarto-document">Render a Quarto document</h3>
-<ul>
-<li>Open <code>colors_document.qmd</code></li>
-<li>Click the <em>Render</em> button in the menu bar</li>
-<li>Preview results: <em>Preview in Window</em> (default) or <em>Preview in Viewer Pane</em></li>
-<li>Outline: <em>Hide/Show document outline</em></li>
-</ul>
-</section>
-<section id="inspect-a-quarto-document" class="level3">
-<h3 class="anchored" data-anchor-id="inspect-a-quarto-document">Inspect a Quarto document</h3>
-<ul>
-<li>Open <code>colors_document.qmd</code></li>
-<li>Switch between <em>Source</em> and <em>Visual</em> view</li>
-<li>Two sections of any Quarto file: YAML header + Body section</li>
-</ul>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>YAML header: Set format(s) and options. Use YAML Syntax</strong></pre>
-</div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Viridis Color Palettes"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Your name"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "`r Sys.Date()`"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>BODY section: Markdown text and code chunks</strong></pre>
-</div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: setup</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| include: false</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Set global knit options (optional)</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">echo =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># load packages</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(viridis)</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(maps)</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># load data and functions</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="fu">here</span>(<span class="st">"R/plot_temps.R"</span>))</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Viridis</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>The <span class="co">[</span><span class="ot">viridis</span><span class="co">](https://sjmgarnier.github.io/viridis/)</span> package provides eight eye-catching color palettes to use in data visualizations:</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>magma</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>inferno</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>plasma</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>viridis</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>cividis</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>rocket</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>mako</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>turbo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="add-new-options-to-the-yaml-header" class="level3">
-<h3 class="anchored" data-anchor-id="add-new-options-to-the-yaml-header">Add new options to the YAML header</h3>
-<ul>
-<li>Add yourself as an <code>author</code>, your <code>institution</code>, a <code>subtitle</code>, <code>description</code>, and <code>abstract</code></li>
-<li><a href="https://quarto.org/docs/output-formats/html-basics.html#table-of-contents">Table of Content</a>: Show the toc, place it on the left side , and set the title of table of contents to “Content”</li>
-<li><a href="https://quarto.org/docs/output-formats/html-code.html">Code blocks</a>: use of <code>code-fold</code>, <code>code-summary</code> and <code>code-line-numbers</code></li>
-<li>Enable “Code” menu via <code>code-tools</code>option.</li>
-<li>Modify a chunk with <code>echo:true</code></li>
-</ul>
-<div class="sourceCode" id="cb3" data-code-fold="true"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">---</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="an">title:</span><span class="co"> "Viridis Color Palettes"</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="an">author:</span><span class="co"> "Carlos"                                </span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="an">subtitle:</span><span class="co"> "created from template"      </span></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="an">institute:</span><span class="co"> "UJI"</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="an">description:</span><span class="co"> "short description here"</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="an">abstract:</span><span class="co"> &gt; </span></span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="co">  Quarto Document example based on a template </span></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="co">  using Posit Cloud</span></span>
-<span id="cb3-10"><a href="#cb3-10"></a><span class="an">date:</span><span class="co"> "`r Sys.Date()`"</span></span>
-<span id="cb3-11"><a href="#cb3-11"></a><span class="an">editor:</span><span class="co"> visual</span></span>
-<span id="cb3-12"><a href="#cb3-12"></a><span class="an">toc:</span><span class="co"> true</span></span>
-<span id="cb3-13"><a href="#cb3-13"></a><span class="an">toc-location:</span><span class="co"> left</span></span>
-<span id="cb3-14"><a href="#cb3-14"></a><span class="an">toc-title:</span><span class="co"> "Content"</span></span>
-<span id="cb3-15"><a href="#cb3-15"></a><span class="an">highlight-style:</span><span class="co"> pygments</span></span>
-<span id="cb3-16"><a href="#cb3-16"></a><span class="an">format:</span></span>
-<span id="cb3-17"><a href="#cb3-17"></a><span class="co">  html: </span></span>
-<span id="cb3-18"><a href="#cb3-18"></a><span class="co">    code-fold: true</span></span>
-<span id="cb3-19"><a href="#cb3-19"></a><span class="co">    code-summary: "Show the code"</span></span>
-<span id="cb3-20"><a href="#cb3-20"></a><span class="co">    code-tools: true</span></span>
-<span id="cb3-21"><a href="#cb3-21"></a><span class="co">    code-line-numbers: true</span></span>
-<span id="cb3-22"><a href="#cb3-22"></a><span class="co">    code-block-border-left: true</span></span>
-<span id="cb3-23"><a href="#cb3-23"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="inspect-a-quarto-presentation" class="level3">
-<h3 class="anchored" data-anchor-id="inspect-a-quarto-presentation">Inspect a Quarto presentation</h3>
-<ul>
-<li>Open <code>colors_presentation.qmd</code></li>
-<li>Two sections of any Quarto file: YAML header + Body section</li>
-<li>Main difference: output <code>format</code> option</li>
-</ul>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Presentation's YAML header: Use of 'revealjs' output format</strong></pre>
-</div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Viridis Color Palettes"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "`r Sys.Date()`"</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> revealjs</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li><a href="https://quarto.org/docs/presentations/">Presentations</a>: slides</li>
-</ul>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Presentation slides</strong></pre>
-</div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!--Each second level header begins a new slide--&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Viridis</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="render-a-quarto-document-1" class="level3">
-<h3 class="anchored" data-anchor-id="render-a-quarto-document-1">Render a Quarto document</h3>
-<ul>
-<li>Open <code>colors_document.qmd</code></li>
-<li>Click the <em>Render</em> button in the menu bar</li>
-</ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
