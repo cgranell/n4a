@@ -7,5 +7,135 @@ date: last-modified
 date-format: "MMM D, YYYY"
 categories: [demo]
 image: featured.png
-fields: [image, title, subtitle, reading-time, categories, description, date]
+fields: [image, title, subtitle, reading-time, categories, description, date, abstract]
+code-overflow: wrap
 ---
+
+### Create an RStudio Project on Posit Cloud using an existing template
+
+- In **Your Workspace**, click *New Project > New Project from Template*
+- Select *Quarto Document Publishing with RStudio*
+- Explore panes/views and main functions of the Posit Cloud's UI
+
+### Browse the files contained in the project
+
+- Quarto document: `colors_document.qmd`
+- Quarto presentation: `colors-presentation.qmd`
+- Interactive application based on Shiny: `colors_app.qmd`
+
+### Render a Quarto document
+- Open `colors_document.qmd`
+- Click the *Render* button in the menu bar
+- Preview results: *Preview in Window* (default) or *Preview in Viewer Pane*
+- Outline: *Hide/Show document outline*
+
+### Inspect a Quarto document
+- Open `colors_document.qmd`
+- Switch between  *Source* and *Visual* view
+- Two sections of any Quarto file: YAML header + Body section
+
+````{.markdown filename="YAML header: Set format(s) and options. Use YAML Syntax"}
+---
+title: "Viridis Color Palettes"
+author: "Your name"
+date: "`r Sys.Date()`"
+format: html
+editor: visual
+---
+````
+
+
+````{.markdown filename="BODY section: Markdown text and code chunks"}
+
+```{{r}}
+#| label: setup
+#| include: false
+
+# Set global knit options (optional)
+knitr::opts_chunk$set(echo = FALSE)
+
+# load packages
+library(tidyverse)
+library(viridis)
+library(here)
+library(maps)
+library(sf)
+
+# load data and functions
+source(here("R/plot_temps.R"))
+```
+
+## Viridis
+
+The [viridis](https://sjmgarnier.github.io/viridis/) package provides eight eye-catching color palettes to use in data visualizations:
+
+-   magma
+-   inferno
+-   plasma
+-   viridis
+-   cividis
+-   rocket
+-   mako
+-   turbo
+
+````
+
+### Add new options to the YAML header
+- Add yourself as an `author`, your `institution`, a `subtitle`, `description`, and `abstract`
+- [Table of Content](https://quarto.org/docs/output-formats/html-basics.html#table-of-contents): Show the toc, place it on the left side , and set the title of table of contents  to "Content"
+- [Code blocks](https://quarto.org/docs/output-formats/html-code.html): use of `code-fold`,  `code-summary` and `code-line-numbers`
+- Enable "Code" menu via `code-tools`option.
+- Modify a chunk with `echo:true` 
+
+
+````{.markdown code-line-numbers="true" code-fold="true"}
+---
+title: "Viridis Color Palettes"
+author: "Carlos"                                
+subtitle: "created from template"      
+institute: "UJI"
+description: "short description here"
+abstract: > 
+  Quarto Document example based on a template 
+  using Posit Cloud
+date: "`r Sys.Date()`"
+editor: visual
+toc: true
+toc-location: left
+toc-title: "Content"
+highlight-style: pygments
+format:
+  html: 
+    code-fold: true
+    code-summary: "Show the code"
+    code-tools: true
+    code-line-numbers: true
+    code-block-border-left: true
+---
+````
+
+### Inspect a Quarto presentation
+- Open `colors_presentation.qmd`
+- Two sections of any Quarto file: YAML header + Body section
+- Main difference: output `format` option
+
+````{.markdown filename="Presentation's YAML header: Use of 'revealjs' output format"}
+---
+title: "Viridis Color Palettes"
+date: "`r Sys.Date()`"
+format: revealjs
+---
+````
+- [Presentations](https://quarto.org/docs/presentations/): slides
+
+````{.markdown filename="Presentation slides"}
+<!--Each second level header begins a new slide-->
+
+## Viridis
+
+````
+
+
+### Render a Quarto document
+- Open `colors_document.qmd`
+- Click the *Render* button in the menu bar
