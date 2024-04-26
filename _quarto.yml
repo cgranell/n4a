@@ -42,3 +42,5 @@ format:
 bibliography: references.bib
 citations-hover: true
 citation-location: document
+execute:
+  freeze: auto

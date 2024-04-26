@@ -22,7 +22,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -114,7 +167,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#create-an-rstudio-project-on-posit-cloud-using-an-existing-template" id="toc-create-an-rstudio-project-on-posit-cloud-using-an-existing-template" class="nav-link active" data-scroll-target="#create-an-rstudio-project-on-posit-cloud-using-an-existing-template">Create an RStudio Project on Posit Cloud using an existing template</a></li>
+  <li><a href="#structure-of-the-notebook-using-markdown" id="toc-structure-of-the-notebook-using-markdown" class="nav-link" data-scroll-target="#structure-of-the-notebook-using-markdown">Structure of the notebook using markdown</a></li>
+  <li><a href="#set-up-code-libraries" id="toc-set-up-code-libraries" class="nav-link" data-scroll-target="#set-up-code-libraries">Set up code libraries</a></li>
+  <li><a href="#citations" id="toc-citations" class="nav-link" data-scroll-target="#citations">Citations</a></li>
+  <li><a href="#write-the-introduction-section" id="toc-write-the-introduction-section" class="nav-link" data-scroll-target="#write-the-introduction-section">Write the Introduction section</a></li>
+  <li><a href="#write-dataset-section" id="toc-write-dataset-section" class="nav-link" data-scroll-target="#write-dataset-section">Write Dataset section</a></li>
+  <li><a href="#write-methods-section" id="toc-write-methods-section" class="nav-link" data-scroll-target="#write-methods-section">Write Methods section</a></li>
+  <li><a href="#write-exploratory-analysis-section" id="toc-write-exploratory-analysis-section" class="nav-link" data-scroll-target="#write-exploratory-analysis-section">Write Exploratory analysis section</a></li>
+  <li><a href="#write-conclusions-section" id="toc-write-conclusions-section" class="nav-link" data-scroll-target="#write-conclusions-section">Write Conclusions section</a></li>
+  <li><a href="#support-pdf-format" id="toc-support-pdf-format" class="nav-link" data-scroll-target="#support-pdf-format">Support PDF format</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -147,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Apr 25, 2024</p>
+      <p class="date">Apr 26, 2024</p>
     </div>
   </div>
   
@@ -157,10 +226,251 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="create-an-rstudio-project-on-posit-cloud-using-an-existing-template" class="level3">
+<h3 class="anchored" data-anchor-id="create-an-rstudio-project-on-posit-cloud-using-an-existing-template">Create an RStudio Project on Posit Cloud using an existing template</h3>
+<ul>
+<li>In <strong>Your Workspace</strong>, click <em>New Project &gt; New RStudio Project</em></li>
+<li>Select <em>File &gt; New File &gt; Quarto Document…</em> to create the file <code>notebook.qmd</code></li>
+<li>Open it and delete all the content of the body section</li>
+</ul>
+</section>
+<section id="structure-of-the-notebook-using-markdown" class="level3">
+<h3 class="anchored" data-anchor-id="structure-of-the-notebook-using-markdown">Structure of the notebook using markdown</h3>
+<ul>
+<li><p>Write main headings (‘##’):</p>
+<ul>
+<li>Introduction</li>
+<li>Data &amp; methods</li>
+<li>Exploratory analysis</li>
+<li>Conclusion</li>
+<li>References</li>
+</ul></li>
+<li><p>Add YAML options for <strong>authoring</strong> and <strong>table of contents</strong></p></li>
+</ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>YAML header: authoring and table of content</strong></pre>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Notebook using `palmerpenguins`"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Carlos Granell"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "`palmerpenguins` is a great dataset for data exploration &amp; visualization"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "04/20/2024"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: left</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-title: Contents</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>Numbering sections:</p>
+<ul>
+<li>Add YAML option <code>number-sections: true</code></li>
+<li>Add “{.unnumbered}” next to References section to make it non-numbered section</li>
+</ul></li>
+</ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Body: Non-numbered section</strong></pre>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## References {.unnumbered}    </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="set-up-code-libraries" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-code-libraries">Set up code libraries</h3>
+<ul>
+<li>Select <em>File &gt; New File &gt; R Script</em> to create the file <code>install.R</code></li>
+<li>Add libraries to use in the notebook</li>
+</ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>install.R</strong></pre>
+</div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"knitr"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rmarkdown"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"gt"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Open the R Script and run it</li>
+<li>Add code chunk in the <code>notebook.qmd</code></li>
+</ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Body: 'setup' chuck</strong></pre>
+</div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="st">```</span><span class="at">{r}</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">#| label: setup</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">#| echo: false</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">#| warning: false</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">library(tidyverse) # tidy data management. Similar to python's pandas</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">library(palmerpenguins) # our working dataset</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">library(gt)  # tabular data</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="st">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="citations" class="level3">
+<h3 class="anchored" data-anchor-id="citations">Citations</h3>
+<ul>
+<li>Select <em>File &gt; New File &gt; Text File</em> to create the file <code>references.bib</code></li>
+<li>Add A YAML options to support citations: <code>bibliography: references.bib</code></li>
+<li>Open <strong>Console</strong> and type <code>citation("palmerpenguins")</code>. Copy and paste the bib entry into <code>reference.bib</code></li>
+</ul>
+</section>
+<section id="write-the-introduction-section" class="level3">
+<h3 class="anchored" data-anchor-id="write-the-introduction-section">Write the Introduction section</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Raw text</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Final result</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>This notebook explores the palmerpenguins dataset as a Quarto (http://quarto.org) document. The dataset comes in its own package, so we install the palmerpenguins package.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>This notebook explores the <strong>palmerpenguins</strong> dataset as a <a href="http://quarto.org">Quarto</a> document. The dataset comes in its own package, so we install the <code>palmerpenguins</code> package <span class="citation" data-cites="horst2020">(<a href="#ref-horst2020" role="doc-biblioref">Horst, Hill, and Gorman 2020</a>)</span>.</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Check <a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">Citations &amp; Footnotes</a> for help and look at the <strong>References</strong> section once you render the notebook</li>
+</ul>
+</section>
+<section id="write-dataset-section" class="level3">
+<h3 class="anchored" data-anchor-id="write-dataset-section">Write Dataset section</h3>
+<ul>
+<li>Add a subheading “Dataset” (###) to the “Dataset &amp; Methods” section</li>
+</ul>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Raw text</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Final result</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Data were collected and made available by Dr.&nbsp;Kristen Gorman (https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) and the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network (https://lternet.edu/).</p>
+<p>The palmerpenguins package contains two datasets:</p>
+<ul>
+<li>penguins: is a simplified version of the raw data</li>
+<li>penquings_raw: contains all the variables and original names</li>
+</ul>
+<p>In this notebook we are going to use the penguins dataset, which contains the following <strong>8</strong> variables are: species, island, bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, sex, year.</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Data were collected and made available by <a href="https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php">Dr.&nbsp;Kristen Gorman</a> and the <strong>Palmer Station, Antarctica LTER</strong>, a member of the <a href="https://lternet.edu/">Long Term Ecological Research Network</a>.</p>
+<p>The <code>palmerpenguins</code> package contains two datasets:</p>
+<ul>
+<li><code>penguins</code>: is a simplified version of the raw data</li>
+<li><code>penquings_raw</code>: contains all the variables and original names</li>
+</ul>
+<p>In this notebook we are going to use the <code>penguins</code> dataset, which contains the following <strong>8</strong> variables:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "species"           "island"            "bill_length_mm"   
+[4] "bill_depth_mm"     "flipper_length_mm" "body_mass_g"      
+[7] "sex"               "year"             </code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Use of <a href="https://quarto.org/docs/computations/inline-code.html">inline expressions</a></li>
+<li>Add a table &amp; reference to the table. Check <a href="https://quarto.org/docs/authoring/tables.html">Tables</a></li>
+<li>Add a figure and reference to the figure. Check <a href="https://quarto.org/docs/authoring/figures.html">Figures</a></li>
+</ul>
+</section>
+<section id="write-methods-section" class="level3">
+<h3 class="anchored" data-anchor-id="write-methods-section">Write Methods section</h3>
+<ul>
+<li>Add a subheading “Methods” (###) to the “Dataset &amp; Methods” section</li>
+</ul>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Raw text</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Final result</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>For data manipulation, we use the tidyverse meta package. For visualization purpose, we use ggplot2 package and the gt package.</p>
+<p>The ggplot2 package, which is already included in the tidyverse, is an R package to create visualisation using the Grammar of Graphics (https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448), originally created by Leland Wilkinson.</p>
+<p>The gt package offers a different and easy-to-use set of functions that helps us build display tables from tabular data. The gt philosophy states that a comprehensive collection of table parts can be used to create a broad range of functional tables. The output formats that gt currently supports are HTML, LaTeX, and RTF.</p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>For data manipulation, we use the <code>tidyverse</code> meta package <span class="citation" data-cites="wickham2019">(<a href="#ref-wickham2019" role="doc-biblioref">Wickham et al. 2019</a>)</span>. For visualization purpose, we use <code>ggplot2</code> package <span class="citation" data-cites="wickham2016">(<a href="#ref-wickham2016" role="doc-biblioref">Wickham 2016</a>)</span> and the <code>gt</code> package <span class="citation" data-cites="iannone2024">(<a href="#ref-iannone2024" role="doc-biblioref">Iannone et al. 2024</a>)</span>.</p>
+<p>The <code>ggplot2</code> package, which is already included in the <code>tidyverse</code>, is an R package to create visualisation using the <strong><a href="https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448">Grammar of Graphics</a></strong>, originally created by Leland Wilkinson.</p>
+<p>The <code>gt</code> package offers a different and easy-to-use set of functions that helps us build display tables from tabular data. The <code>gt</code> philosophy states that a comprehensive collection of table parts can be used to create a broad range of functional tables. The output formats that <code>gt</code> currently supports are HTML, LaTeX, and RTF.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="write-exploratory-analysis-section" class="level3">
+<h3 class="anchored" data-anchor-id="write-exploratory-analysis-section">Write Exploratory analysis section</h3>
+<ul>
+<li>Explanation in class: code chucks to produce output figures, YAML options for <a href="https://quarto.org/docs/computations/execution-options.html">code execution</a>, and <a href="https://quarto.org/docs/projects/code-execution.html">freeze</a>.</li>
+</ul>
+</section>
+<section id="write-conclusions-section" class="level3">
+<h3 class="anchored" data-anchor-id="write-conclusions-section">Write Conclusions section</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Raw text</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Final result</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>This notebook demonstrates that the palmerpenguins package is a great data set to get started with computational notebooks with Quarto Document (https://quarto.org/docs/output-formats/html-basics.html). We have learned YAML options (table of content, section numbering, for HTML &amp; PDF output, dhow to create content with markdown (headings, tables, figures, citations, cross references, margin content), execute code chucks, display code outputs, and specify options for code chunks.</p>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p>This notebook demonstrates that the <code>palmerpenguins</code> package is a great data set to get started with computational notebooks with <a href="https://quarto.org/docs/output-formats/html-basics.html">Quarto Document</a>. We have learned YAML options (table of content, section numbering, for HTML &amp; PDF output, dhow to create content with markdown (headings, tables, figures, citations, cross references, margin content), execute code chucks, display code outputs, and specify options for code chunks.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="support-pdf-format" class="level3">
+<h3 class="anchored" data-anchor-id="support-pdf-format">Support PDF format</h3>
+<ul>
+<li>Add YAML options for <strong>PDF</strong></li>
+</ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>YAML header: PDF output format</strong></pre>
+</div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: left</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-title: Contents</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">  pdf:</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">    colorlinks: true</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>tinytext</code> is required to compile PDF documents. Use the following command:</li>
+</ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> install tinytex</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="references" class="level3">
 
 
 
-</main> <!-- /main -->
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-horst2020" class="csl-entry" role="listitem">
+Horst, Allison Marie, Alison Presmanes Hill, and Kristen B Gorman. 2020. <em>Palmerpenguins: Palmer Archipelago (Antarctica) Penguin Data</em>. <a href="https://doi.org/10.5281/zenodo.3960218">https://doi.org/10.5281/zenodo.3960218</a>.
+</div>
+<div id="ref-iannone2024" class="csl-entry" role="listitem">
+Iannone, Richard, Joe Cheng, Barret Schloerke, Ellis Hughes, Alexandra Lauer, and JooYoung Seo. 2024. <em>Gt: Easily Create Presentation-Ready Display Tables</em>. <a href="https://gt.rstudio.com">https://gt.rstudio.com</a>.
+</div>
+<div id="ref-wickham2016" class="csl-entry" role="listitem">
+Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
+</div>
+<div id="ref-wickham2019" class="csl-entry" role="listitem">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the <span class="nocase">tidyverse</span>.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
