@@ -1,0 +1,76 @@
+---
+title: "04 Scholarly articles"
+subtitle: "Notebooks for Academics"
+description: " YAML metadata keys for scholarly articles"
+author: "Carlos Granell"
+date: last-modified
+date-format: "MMM D, YYYY"
+categories: [guided-example]
+image: featured.png
+fields: [image, title, subtitle, reading-time, categories, description, date, abstract]
+code-overflow: wrap
+---
+
+
+### Create a copy of the *03 Quarto Document using plamerpenguins* project
+
+- In **Your Workspace**, click on the *copy* icon associated with the existing project
+- Rename the newly created project 
+- Open the `notebook-qmd` file to explore the basic YAML options for academic articles
+
+
+````{.markdown filename="YAML header: basic metadata keys"}
+---
+title: "Notebook using `palmerpenguins`"
+author: "Carlos Granell"
+description: "`palmerpenguins` is a great dataset for data exploration & visualization"
+date: "04/20/2024"
+---
+````
+
+
+### Add authoring keys for academic articles
+
+- Check [scholarly articles](https://quarto.org/docs/authoring/front-matter.html) to the YAML header
+
+
+### Customise title & anexes  
+
+- [Title block](https://quarto.org/docs/authoring/title-blocks.html): Add options `title-block-style` and `title-block-banner` to the YAML header 
+- [Appendices](https://quarto.org/docs/authoring/appendices.html): References, Citation, Licence (Reuse), etc.
+
+### Quarto journal extensions
+
+- [Quarto Extensions](https://quarto.org/docs/extensions/): 
+- Install the [Elsevier Journal Format](https://github.com/quarto-journals/elsevier) (a Quarto extension) using the following command: 
+
+````{.bash filename="Terminal"}
+quarto add quarto-journals/elsevier
+```` 
+- Render the pdf 
+
+
+````{.bash filename="Terminal"}
+quarto render notebook.qmd --to elsevier-pdf
+```` 
+
+
+- Add YAML key sto customise the PDF output  
+
+
+````{.markdown filename="YAML header: basic metadata for academic articles"}
+---
+format: 
+  elsevier-pdf:
+    keep-tex: true
+    journal:
+      name: Environmental Modelling and Software
+      formatting: preprint
+      model: 3p
+      cite-style: number
+---
+````
+
+
+### References
+
