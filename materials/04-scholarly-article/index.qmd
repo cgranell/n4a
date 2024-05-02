@@ -5,7 +5,7 @@ description: " YAML metadata keys for scholarly articles"
 author: "Carlos Granell"
 date: last-modified
 date-format: "MMM D, YYYY"
-categories: [guided-example]
+categories: [guided-exercise, exercise]
 image: featured.png
 fields: [image, title, subtitle, reading-time, categories, description, date, abstract]
 code-overflow: wrap

@@ -1,0 +1,29 @@
+---
+title: "Additional materials"
+---
+
+If you want to expand your knowledge about Quarto.
+
+
+[Publish and Share with Quarto :: CHEATSHEET](https://rstudio.github.io/cheatsheets/quarto.pdf)
+
+
+[Quarto for Reproducible Medical Manuscripts](https://quarto.org/docs/blog/posts/2024-04-01-manuscripts-rmedicine/)
+
+https://mine.quarto.pub/quarto-manuscripts-rmed/#/title-slide
+
+[Quarto for Scientists](https://qmd4sci.njtierney.com/)
+
+
+[Notebooks Now!](https://agu.curve.space/)
+
+
+
+Openscapes - [Making shareable documents with Quarto: Create open-source tutorials, onboarding docs, and much more](https://openscapes.github.io/quarto-website-tutorial/)
+
+[NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/)
+
+[Writing Reproducible Manuscripts in R & Python](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/), by Research Data Management Support, Utrecht University
+
+
+[Technical Writing and Publishing Data-Rich Articles with Quarto, A Walk-Through of Quarto, a New Publishing Tool for Jupyter notebook](https://gael-close.github.io/posts/2209-tech-writing/2209-tech-writing.html)

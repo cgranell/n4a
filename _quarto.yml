@@ -24,6 +24,8 @@ website:
     left:
       - href: index.qmd
         text: Overview
+      - href: extras.qmd
+        text: Extras
 
     right:
       - href: https://quarto.org/

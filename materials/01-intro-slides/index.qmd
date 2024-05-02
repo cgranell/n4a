@@ -28,46 +28,241 @@ format:
       boardmarker-width: 3
 execute:
   echo: true
-
+bibliography: ../../references.bib
 ---
 
-# What do *Notebooks* means? {background-color="#4f6952"}
+# What do *Notebooks* mean? {background-color="#4f6952"}
+
+
+
+## Why do scientists use notebooks?
+ 
+
+:::: {.columns}
+
+::: {.column}
+
+Handwritten field notebook is a traditional research tool in science
+
+
+:::
+
+
+::: {.column .fragment}
+![](images/field-notes-bookcover.jpg){width="80%"}
+
+:::  {.aside}
+[@canfield2011]
+:::
+
+:::
+::::
+
+## {data-menu-title="Fields notes - Butterfies" background-image="images/field-notes-butterflies.png" background-size="contain"}
+
+
+::: {.aside}
+[@canfield2011]
+:::
+
+::: {.notes}
+Notebook pages from artist and naturalist Claire Emery describing her observations of butterflies in a hawthorne thicket [@canfield2011]
+:::
+
+
+## {data-menu-title="Fields notes - California Survey" background-image="images/field-notes-grinnell.png" background-size="contain"}
+
+
+::: {.aside}
+
+[@canfield2011]
+
+:::
+
+
+::: {.notes}
+
+**California Survey**. In the early 1900's Joseph Grinnell, the first director of the University of California, Berkeley's Museum of Vertebrate Zoology, organized a monumental effort to document California's plants and animals in their natural state. Teams of scientists embarked on transects across the state from west to east, meticulously documenting the location, density and appearance of the flora and fauna they encountered and collected. The resulting archive of animal specimens and journal notes has provided today's scientists with the unparalleled opportunity to follow those same transects and see what has changed during the last century.
+
+A page from the field notes of Charles L. Camp illustrating the type of detail contained in the "Grinnell-era" notes. General map (based on the Coulterville 15 min quadrangle available at that time) of area between Coulterville and Dudleys in Mariposa County, with position of traplines marked, elevational contours, life zones and so on given. From the archives of the Museum of Vertebrate Zoology, University of California, Berkeley [@canfield2011]
+
+:::
+
+## {data-menu-title="Fields notes - Caracal cat" background-image="images/field-notes-lynx.png" 
+background-size="contain"}
+
+::: {.aside}
+[@canfield2011]
+:::
+
+::: {.notes}
+
+Ecologist Jonathan Kingdon writes that drawing “represents a species of translation that is different from what emerges in photography. Given the new research on how the brain processes visual input and given that drawing is a mental process, no further justification need be made for the utility of drawing in lifting out relevance from within the chaos of actual visual experience.”
+
+Drawings of a caracal cat Caracal flagging its ears and head. By Jonathan Kingdon [@canfield2011]
+
+:::
+
+
+## Michael Faraday’s use of notebooks [@tweney2015]
+
+
+## Field notebook needs improvement? {.center .r-fit-text}
+
+
+## How do scientists use notebooks? {.center .r-fit-text}
+
 
 ## Literate programming [@knuth1984]
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="50%" style="text-align: center"}
 
-### [Prose & code together](http://www.literateprogramming.com/) 
+![](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg){width="70%"}
+
+[Donald E Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
+
+:::
+
+
+::: {.column .fragment}
+
 
 Code embedded within the program's documentation as opposed to documentation embedded within code.
 
+::: {.fragment}
+**Prose & code together**
+:::
 
 ::: 
 
-::: {.column width="50%" style="text-align: center"}
+::::
 
-![](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg)
+::: {.aside}
+[literateprogramming.com](http://www.literateprogramming.com/)
+:::
+
+## Dynamic documentation
+
+### Any time that the underlying data, analysis, or code change...  
+
+::: {.incremental}
+
+- figures and tables are *automatically* generated
+
+- results in text are *automatically* rendered 
+
+- final content is *automatically* updated
+:::
 
 
-[Donald E Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
+## Dynamic documentation
+
+::: {.r-fit-text}
+::: {.fragment .fade-in fragment-index=1}
+::: {.fragment .highlight-blue fragment-index=1}
+Constant change
+:::
+:::
+:::
+
+
+
+## Advantages
+
+**(1) Eliminate human error in copying and pasting results**
+
+_We found that half of all published psychology papers that use null-hypothesis significance testing (NHST) contained at least one p-value that was inconsistent with its test statistic and degrees of freedom. One in eight papers contained a grossly inconsistent p-value that may have affected the statistical conclusion_
+_([Nuijten et al., 2016](https://doi.org/10.3758/s13428-015-0664-2))_
+
+## Advantages
+
+**(2) Easy revisions and specification of desired figures and tables**
+
+_When revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper._
+
+## Advantages
+
+**(3) Promote computational reproducibility **
+
+- Easy verification and replication of research findings
+
+- While programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time.
+
+
+## Advantatges
+
+[@pimentel2019]
+
+
+## Electronic documents give reproducible research a new meaning [@claerbout1992]
+
+:::: {.columns}
+
+::: {.column}
+
+
+-   Merge publication with underlying computational analysis
+
+-   Executable digital notebook
+
+-   Be open & help others
+
+-   Document for future self
+:::
+
+::: {.column .fragment}
+
+![](images/Claerbout92.png){width="60%"}
 
 :::
 ::::
 
 
-## Dynamic documentation (Act III)
+## Computational nootbooks 
 
-https://github.com/cgranell/rrp-uji/blob/main/slides/slides11_01.Rmd
 
-## Electronic documents give reproducible research a new meaning (Claerbout)
+::: {.incremental}
+-   A computational notebook is a (cloud-based/local) **editor** composed of cells, which is used for **literate programming**
 
-https://github.com/cgranell/rrp-uji/blob/main/slides/slides11_01.Rmd
+-   Each cell may contain:
+
+    - narrative/text/documentation, or
+    - executable code (python, R, ...), or 
+    - results as code output (charts, tables, plots, maps, ...)
+
+::: 
+
+## Computational nootbooks 
+
+Language-specific tools to enable interactive or “live” notebooks: 
+
+[JupyterLabs](https://jupyter.org/), [RMarkdown](https://rmarkdown.rstudio.com/), [Google Colab](https://colab.research.google.com/), [Matlab Live Scripts](https://es.mathworks.com/help/matlab/live-scripts-and-functions.html), [Wolfram](https://www.wolfram.com/computational-notebooks/), see more in [Wikipedia](https://en.wikipedia.org/wiki/Notebook_interface)
+
+
+[Quarto](https://quarto.org/): Python, R, Julia and Observable
+
+
+## Computarionbal notebooks
+
+https://mine.quarto.pub/quarto-manuscripts-rmed/#/title-slide
+
+
+https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html
 
 
 # What do *Notebooks for Academics* mean? {background-color="#4f6952"}
 
 
 
-# References
+## Hello Quarto
+
+- Quarto® is an open-source scientific and technical publishing system built on Pandoc.
+
+- It's the 'new generation' of R Markdown, designed to work multiple programming languages + tools in an aligned way.
+
+- Quarto can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.
+
+
+# References {-}

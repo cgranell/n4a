@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cgranell.github.io/n4a/CODE_OF_CONDUCT.html</loc>
-    <lastmod>2024-04-30T12:52:47.076Z</lastmod>
+    <lastmod>2024-05-02T13:55:39.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cgranell.github.io/n4a/extras.html</loc>
+    <lastmod>2024-05-02T13:55:40.508Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/n4a/index.html</loc>
-    <lastmod>2024-04-30T12:52:48.225Z</lastmod>
+    <lastmod>2024-05-02T13:55:41.573Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/n4a/LICENSE.html</loc>
-    <lastmod>2024-04-30T12:52:49.407Z</lastmod>
+    <lastmod>2024-05-02T13:55:42.637Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/n4a/materials/01-intro-slides/index.html</loc>
-    <lastmod>2024-04-30T12:52:50.169Z</lastmod>
+    <lastmod>2024-05-02T13:55:43.531Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/n4a/materials/02-demo-template/index.html</loc>
-    <lastmod>2024-04-30T12:52:51.788Z</lastmod>
+    <lastmod>2024-05-02T13:55:45.178Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/n4a/materials/03-document/index.html</loc>
-    <lastmod>2024-04-30T12:52:53.039Z</lastmod>
+    <lastmod>2024-05-02T13:55:46.370Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/n4a/materials/04-scholarly-article/index.html</loc>
-    <lastmod>2024-04-30T12:52:53.664Z</lastmod>
+    <lastmod>2024-05-02T13:55:47.042Z</lastmod>
   </url>
 </urlset>

@@ -5,7 +5,7 @@ description: "`palmerpenguins` is a great dataset for data exploration & visuali
 author: "Carlos Granell"
 date: last-modified
 date-format: "MMM D, YYYY"
-categories: [guided-example]
+categories: [guided-exercise]
 image: featured.png
 fields: [image, title, subtitle, reading-time, categories, description, date, abstract]
 code-overflow: wrap
