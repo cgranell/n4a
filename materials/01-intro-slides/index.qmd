@@ -34,8 +34,10 @@ bibliography: ../../references.bib
 # What do *Notebooks* mean? {background-color="#4f6952"}
 
 
+## Why do scientists use notebooks? {.center .r-fit-text}
 
-## Why do scientists use notebooks?
+
+## Fields notes
  
 
 :::: {.columns}
@@ -104,10 +106,31 @@ Drawings of a caracal cat Caracal flagging its ears and head. By Jonathan Kingdo
 :::
 
 
-## Michael Faraday’s use of notebooks [@tweney2015]
+## Faraday’s use of notebooks 
 
+:::: {.columns}
+
+::: {.column}
+- Faraday recorded roughly 30,000 experiments
+
+- **Laboratory notebooks**, idea books, loose slips, retrieval sheets, work sheets
+
+- Notebooks numbered from 1 (Aug 1832) to 16,041 (Mar 1860)
+:::
+
+::: {.column .fragment}
+
+![](https://journals.sagepub.com/cms/10.1177/1750698015587149/asset/images/large/10.1177_1750698015587149-fig5.jpeg)
+
+:::
+::::
+
+::: {.aside}
+[@tweney2015]
+:::
 
 ## Field notebook needs improvement? {.center .r-fit-text}
+
 
 
 ## How do scientists use notebooks? {.center .r-fit-text}
@@ -117,7 +140,7 @@ Drawings of a caracal cat Caracal flagging its ears and head. By Jonathan Kingdo
 
 :::: {.columns}
 
-::: {.column width="50%" style="text-align: center"}
+::: {.column style="text-align: center"}
 
 ![](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg){width="70%"}
 
@@ -143,6 +166,33 @@ Code embedded within the program's documentation as opposed to documentation emb
 [literateprogramming.com](http://www.literateprogramming.com/)
 :::
 
+## Electronic documents give reproducible research a new meaning
+
+:::: {.columns}
+
+::: {.column}
+
+
+-   Merge publication with underlying computational analysis
+
+-   Executable digital notebook
+
+-   Be open & help others
+
+-   Document for future self
+:::
+
+::: {.column .fragment}
+
+![](images/Claerbout92.png){width="70%"}
+
+:::
+::::
+
+::: {.aside}
+[@claerbout1992]
+:::
+
 ## Dynamic documentation
 
 ### Any time that the underlying data, analysis, or code change...  
@@ -162,107 +212,193 @@ Code embedded within the program's documentation as opposed to documentation emb
 ::: {.r-fit-text}
 ::: {.fragment .fade-in fragment-index=1}
 ::: {.fragment .highlight-blue fragment-index=1}
-Constant change
+Constant content change
 :::
 :::
 :::
 
 
 
-## Advantages
+## Advantages ([source](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html))
 
-**(1) Eliminate human error in copying and pasting results**
+### (1) Eliminate human error in copying and pasting results
 
-_We found that half of all published psychology papers that use null-hypothesis significance testing (NHST) contained at least one p-value that was inconsistent with its test statistic and degrees of freedom. One in eight papers contained a grossly inconsistent p-value that may have affected the statistical conclusion_
-_([Nuijten et al., 2016](https://doi.org/10.3758/s13428-015-0664-2))_
+> We found that half of all published psychology papers that use null-hypothesis significance testing (NHST) contained at least one p-value that was inconsistent with its test statistic and degrees of freedom. One in eight papers contained a grossly inconsistent p-value that may have affected the statistical conclusion
 
-## Advantages
-
-**(2) Easy revisions and specification of desired figures and tables**
-
-_When revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper._
-
-## Advantages
-
-**(3) Promote computational reproducibility **
-
-- Easy verification and replication of research findings
-
-- While programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time.
+[@nuijten2015]
 
 
-## Advantatges
+## Advantages ([source](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html))
 
-[@pimentel2019]
+### (2) Easy revisions and specification of desired figures and tables
+
+> When revisions are requested, one may have to constantly modify tables and figures by hand, which creates a strong incentive not to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in an article.
 
 
-## Electronic documents give reproducible research a new meaning [@claerbout1992]
+## Advantages ([source](https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html))
+
+### (3) Promote computational reproducibility
+
+> Easy verification and replication of research findings
+
+
+::: {.fragment .fade-in}
+
+> While programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time.
+
+:::
+
+
+## Advantages: Save time?
+
+No more time is spent doing reproducible science with notebooks
+
 
 :::: {.columns}
 
-::: {.column}
-
-
--   Merge publication with underlying computational analysis
-
--   Executable digital notebook
-
--   Be open & help others
-
--   Document for future self
+::: {.column .fragment width="30%"}
+### It just *reallocates* time where you spend it.
 :::
 
-::: {.column .fragment}
-
-![](images/Claerbout92.png){width="60%"}
-
+::: {.column .fragment width="70%"}
+![](https://mfr.osf.io/export?url=https://osf.io/download/ftkq8/?direct=%26mode=render&format=2400x2400.jpeg)
 :::
+
 ::::
 
+::: {.aside}
+[@quintana2020]
+:::
 
-## Computational nootbooks 
+## Current state of affairs ([source](https://mine.quarto.pub/quarto-manuscripts-rmed/#/title-slide))
 
+Most computational science is **born in notebooks**
 
-::: {.incremental}
--   A computational notebook is a (cloud-based/local) **editor** composed of cells, which is used for **literate programming**
+::: incremental
+-   Peer-review and publication workflows **don't support notebooks** as research outputs
+-   The more complex scenarios involve a lot of **manual handling** to bring the project to journal submission
+-   Often during this process **reproducibility is lost**, or takes second seat to the formatting requirements
+-   Final submission **rarely captures all computations**, which are, at best, relegated to supplementary materials
+:::
 
--   Each cell may contain:
+and ~~dies~~ **ends in PDF or Word documents**
 
-    - narrative/text/documentation, or
-    - executable code (python, R, ...), or 
-    - results as code output (charts, tables, plots, maps, ...)
-
-::: 
-
-## Computational nootbooks 
-
-Language-specific tools to enable interactive or “live” notebooks: 
-
-[JupyterLabs](https://jupyter.org/), [RMarkdown](https://rmarkdown.rstudio.com/), [Google Colab](https://colab.research.google.com/), [Matlab Live Scripts](https://es.mathworks.com/help/matlab/live-scripts-and-functions.html), [Wolfram](https://www.wolfram.com/computational-notebooks/), see more in [Wikipedia](https://en.wikipedia.org/wiki/Notebook_interface)
-
-
-[Quarto](https://quarto.org/): Python, R, Julia and Observable
-
-
-## Computarionbal notebooks
-
-https://mine.quarto.pub/quarto-manuscripts-rmed/#/title-slide
-
-
-https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html
+## What if notebooks became *main drivers of research*, from the initial conception to the journal submission stage?  {.center .r-fit-text}
 
 
 # What do *Notebooks for Academics* mean? {background-color="#4f6952"}
 
+## Notebooks can be used for
+
+:::: {.columns}
+
+::: {.column .fragment}
+
+### Research
+
+::: {.fragment .fade-in}
+articles, reports  
+:::
+
+::: {.fragment .fade-in}
+presentations 
+:::
+
+::: {.fragment .fade-in}
+books, PhD thesis 
+:::
+
+::: {.fragment .fade-in}
+websites, interactive dashboards
+:::
+
+::: {.fragment .fade-in}
+blog posts
+:::
+
+:::
+
+::: {.column .fragment}
+### Teaching
 
 
-## Hello Quarto
+::: {.fragment .fade-in}
+lab documents
+:::
 
-- Quarto® is an open-source scientific and technical publishing system built on Pandoc.
+::: {.fragment .fade-in}
+presentations
+:::
 
-- It's the 'new generation' of R Markdown, designed to work multiple programming languages + tools in an aligned way.
+::: {.fragment .fade-in}
+textbooks, manuals
+:::
 
-- Quarto can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.
+::: {.fragment .fade-in}
+websites, interactive materials
+:::
 
+::: {.fragment .fade-in}
+blog posts
+:::
+
+
+:::
+
+::::
+
+## How many tools do you use to produce these types of results? {.center .r-fit-text}
+
+
+# Hello Quarto {background-color="#4f6952"}
+
+::: {.fragment}
+One source, many output formats
+:::
+
+
+## What is in a notebook?
+
+
+::: {.incremental}
+-   A notebook is a (cloud-based/local) **dynamic document** composed of cells, which is used for **literate programming**
+
+-   Each cell may contain:
+
+    - narrative/text/documentation, or
+    - executable code, or 
+    - results as code output (charts, tables, plots, maps, ...)
+
+::: 
+
+## What is in a `Quarto` notebook?
+
+
+::: {.incremental}
+-   A `Quarto` notebook is a (cloud-based/local) **dynamic document** (`.qmd`) composed of cells, which is used for **literate programming**
+
+-   Each cell may contain:
+
+    - narrative/text/documentation in **Markdown** format, or
+    - executable code (R, Python, Julia and Observable), or 
+    - results as code output (charts, tables, plots, maps, ...)
+
+::: 
+
+
+## Quarto (`.qmd`)
+
+[Quarto](https://quarto.org/) is an open-source scientific and technical publishing system built on [Pandoc](https://pandoc.org/), and can:
+
+::: {.incremental}
+
+-   **be authored** in your favourite code editor
+-   **render** from `qmd` or Jupyter notebook to PDF, Word, HTML, slides, web pages, blog posts, books, etc.
+-   **execute** code in R, Python, Julia and Observable
+-   **apply** journal styles to your outputs with Quarto extensions
+-   **publish** to GitHub Pages, Netlify, etc.
+-   **orchestrate** multiple inputs and outputs with Quarto projects
+
+:::
 
 # References {-}

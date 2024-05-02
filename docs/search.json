@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Notebooks for Academics'24",
     "section": "",
-    "text": "01 Hello Quarto Notebooks\n\n\n4 min\n\n\n\nslides\n\n\n\nExpand the use of notebooks to various types of academic activities\n\n\n\n\n\n\n\n\n\n\n\n\n\n02 Quarto Document and Presentation\n\n\n3 min\n\n\n\ndemo\n\n\n\nNotebook demo based on the ‘Quarto document publishing with RStudio’ template using Posit Cloud\n\n\n\n\n\n\n\n\n\n\n\n\n\n03 Quarto Document using plamerpenguins\n\n\n5 min\n\n\n\nguided-exercise\n\n\n\npalmerpenguins is a great dataset for data exploration & visualization\n\n\n\n\n\n\n\n\n\n\n\n\n\n04 Scholarly articles\n\n\n1 min\n\n\n\nguided-exercise\n\n\nexercise\n\n\n\nYAML metadata keys for scholarly articles\n\n\n\n\n\n\n\nNo matching items"
+    "text": "01 Hello Quarto Notebooks\n\n\n6 min\n\n\n\nslides\n\n\n\nExpand the use of notebooks to various types of academic activities\n\n\n\n\n\n\n\n\n\n\n\n\n\n02 Quarto Document and Presentation\n\n\n3 min\n\n\n\ndemo\n\n\n\nNotebook demo based on the ‘Quarto document publishing with RStudio’ template using Posit Cloud\n\n\n\n\n\n\n\n\n\n\n\n\n\n03 Quarto Document using plamerpenguins\n\n\n5 min\n\n\n\nguided-exercise\n\n\n\npalmerpenguins is a great dataset for data exploration & visualization\n\n\n\n\n\n\n\n\n\n\n\n\n\n04 Scholarly articles\n\n\n1 min\n\n\n\nguided-exercise\n\n\nexercise\n\n\n\nYAML metadata keys for scholarly articles\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "LICENSE.html",
@@ -39,7 +39,14 @@
     "href": "materials/01-intro-slides/index.html#why-do-scientists-use-notebooks",
     "title": "01 Hello Quarto Notebooks",
     "section": "Why do scientists use notebooks?",
-    "text": "Why do scientists use notebooks?\n\n\nHandwritten field notebook is a traditional research tool in science\n\n\n\n\n\n\n(Canfield 2011)"
+    "text": "Why do scientists use notebooks?"
+  },
+  {
+    "objectID": "materials/01-intro-slides/index.html#fields-notes",
+    "href": "materials/01-intro-slides/index.html#fields-notes",
+    "title": "01 Hello Quarto Notebooks",
+    "section": "Fields notes",
+    "text": "Fields notes\n\n\nHandwritten field notebook is a traditional research tool in science\n\n\n\n\n\n\n(Canfield 2011)"
   },
   {
     "objectID": "materials/01-intro-slides/index.html#section",
@@ -63,11 +70,11 @@
     "text": "Ecologist Jonathan Kingdon writes that drawing “represents a species of translation that is different from what emerges in photography. Given the new research on how the brain processes visual input and given that drawing is a mental process, no further justification need be made for the utility of drawing in lifting out relevance from within the chaos of actual visual experience.”\nDrawings of a caracal cat Caracal flagging its ears and head. By Jonathan Kingdon (Canfield 2011)\n\n\n(Canfield 2011)"
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#michael-faradays-use-of-notebooks-tweney2015",
-    "href": "materials/01-intro-slides/index.html#michael-faradays-use-of-notebooks-tweney2015",
+    "objectID": "materials/01-intro-slides/index.html#faradays-use-of-notebooks",
+    "href": "materials/01-intro-slides/index.html#faradays-use-of-notebooks",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Michael Faraday’s use of notebooks (Tweney and Ayala 2015)",
-    "text": "Michael Faraday’s use of notebooks (Tweney and Ayala 2015)"
+    "section": "Faraday’s use of notebooks",
+    "text": "Faraday’s use of notebooks\n\n\n\nFaraday recorded roughly 30,000 experiments\nLaboratory notebooks, idea books, loose slips, retrieval sheets, work sheets\nNotebooks numbered from 1 (Aug 1832) to 16,041 (Mar 1860)\n\n\n\n\n\n\n\n(Tweney and Ayala 2015)"
   },
   {
     "objectID": "materials/01-intro-slides/index.html#field-notebook-needs-improvement",
@@ -91,6 +98,13 @@
     "text": "Literate programming (Knuth 1984)\n\n\n\nDonald E Knuth\n\nCode embedded within the program’s documentation as opposed to documentation embedded within code.\n\nProse & code together\n\n\n\n\n\nliterateprogramming.com"
   },
   {
+    "objectID": "materials/01-intro-slides/index.html#electronic-documents-give-reproducible-research-a-new-meaning",
+    "href": "materials/01-intro-slides/index.html#electronic-documents-give-reproducible-research-a-new-meaning",
+    "title": "01 Hello Quarto Notebooks",
+    "section": "Electronic documents give reproducible research a new meaning",
+    "text": "Electronic documents give reproducible research a new meaning\n\n\n\nMerge publication with underlying computational analysis\nExecutable digital notebook\nBe open & help others\nDocument for future self\n\n\n\n\n\n\n\n(Claerbout and Karrenbach 1992)"
+  },
+  {
     "objectID": "materials/01-intro-slides/index.html#dynamic-documentation",
     "href": "materials/01-intro-slides/index.html#dynamic-documentation",
     "title": "01 Hello Quarto Notebooks",
@@ -102,70 +116,84 @@
     "href": "materials/01-intro-slides/index.html#dynamic-documentation-1",
     "title": "01 Hello Quarto Notebooks",
     "section": "Dynamic documentation",
-    "text": "Dynamic documentation\n\n\n\nConstant change"
+    "text": "Dynamic documentation\n\n\n\nConstant content change"
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#advantages",
-    "href": "materials/01-intro-slides/index.html#advantages",
+    "objectID": "materials/01-intro-slides/index.html#advantages-source",
+    "href": "materials/01-intro-slides/index.html#advantages-source",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Advantages",
-    "text": "Advantages\n(1) Eliminate human error in copying and pasting results\nWe found that half of all published psychology papers that use null-hypothesis significance testing (NHST) contained at least one p-value that was inconsistent with its test statistic and degrees of freedom. One in eight papers contained a grossly inconsistent p-value that may have affected the statistical conclusion (Nuijten et al., 2016)"
+    "section": "Advantages (source)",
+    "text": "Advantages (source)\n(1) Eliminate human error in copying and pasting results\n\nWe found that half of all published psychology papers that use null-hypothesis significance testing (NHST) contained at least one p-value that was inconsistent with its test statistic and degrees of freedom. One in eight papers contained a grossly inconsistent p-value that may have affected the statistical conclusion\n\n(Nuijten et al. 2015)"
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#advantages-1",
-    "href": "materials/01-intro-slides/index.html#advantages-1",
+    "objectID": "materials/01-intro-slides/index.html#advantages-source-1",
+    "href": "materials/01-intro-slides/index.html#advantages-source-1",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Advantages",
-    "text": "Advantages\n(2) Easy revisions and specification of desired figures and tables\nWhen revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper."
+    "section": "Advantages (source)",
+    "text": "Advantages (source)\n(2) Easy revisions and specification of desired figures and tables\n\nWhen revisions are requested, one may have to constantly modify tables and figures by hand, which creates a strong incentive not to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in an article."
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#advantages-2",
-    "href": "materials/01-intro-slides/index.html#advantages-2",
+    "objectID": "materials/01-intro-slides/index.html#advantages-source-2",
+    "href": "materials/01-intro-slides/index.html#advantages-source-2",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Advantages",
-    "text": "Advantages\n(3) Promote computational reproducibility \n\nEasy verification and replication of research findings\nWhile programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time."
+    "section": "Advantages (source)",
+    "text": "Advantages (source)\n(3) Promote computational reproducibility\n\nEasy verification and replication of research findings\n\n\n\nWhile programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time."
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#advantatges",
-    "href": "materials/01-intro-slides/index.html#advantatges",
+    "objectID": "materials/01-intro-slides/index.html#advantages-save-time",
+    "href": "materials/01-intro-slides/index.html#advantages-save-time",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Advantatges",
-    "text": "Advantatges\n(Pimentel et al. 2019)"
+    "section": "Advantages: Save time?",
+    "text": "Advantages: Save time?\nNo more time is spent doing reproducible science with notebooks\n\n\n\nIt just reallocates time where you spend it.\n\n\n\n\n\n\n(Quintana 2020)"
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#electronic-documents-give-reproducible-research-a-new-meaning-claerbout1992",
-    "href": "materials/01-intro-slides/index.html#electronic-documents-give-reproducible-research-a-new-meaning-claerbout1992",
+    "objectID": "materials/01-intro-slides/index.html#current-state-of-affairs-source",
+    "href": "materials/01-intro-slides/index.html#current-state-of-affairs-source",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Electronic documents give reproducible research a new meaning (Claerbout and Karrenbach 1992)",
-    "text": "Electronic documents give reproducible research a new meaning (Claerbout and Karrenbach 1992)\n\n\n\nMerge publication with underlying computational analysis\nExecutable digital notebook\nBe open & help others\nDocument for future self"
+    "section": "Current state of affairs (source)",
+    "text": "Current state of affairs (source)\nMost computational science is born in notebooks\n\n\nPeer-review and publication workflows don’t support notebooks as research outputs\nThe more complex scenarios involve a lot of manual handling to bring the project to journal submission\nOften during this process reproducibility is lost, or takes second seat to the formatting requirements\nFinal submission rarely captures all computations, which are, at best, relegated to supplementary materials\n\n\nand dies ends in PDF or Word documents"
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#computational-nootbooks",
-    "href": "materials/01-intro-slides/index.html#computational-nootbooks",
+    "objectID": "materials/01-intro-slides/index.html#what-if-notebooks-became-main-drivers-of-research-from-the-initial-conception-to-the-journal-submission-stage",
+    "href": "materials/01-intro-slides/index.html#what-if-notebooks-became-main-drivers-of-research-from-the-initial-conception-to-the-journal-submission-stage",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Computational nootbooks",
-    "text": "Computational nootbooks\n\n\nA computational notebook is a (cloud-based/local) editor composed of cells, which is used for literate programming\nEach cell may contain:\n\nnarrative/text/documentation, or\nexecutable code (python, R, …), or\nresults as code output (charts, tables, plots, maps, …)"
+    "section": "What if notebooks became main drivers of research, from the initial conception to the journal submission stage?",
+    "text": "What if notebooks became main drivers of research, from the initial conception to the journal submission stage?"
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#computational-nootbooks-1",
-    "href": "materials/01-intro-slides/index.html#computational-nootbooks-1",
+    "objectID": "materials/01-intro-slides/index.html#notebooks-can-be-used-for",
+    "href": "materials/01-intro-slides/index.html#notebooks-can-be-used-for",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Computational nootbooks",
-    "text": "Computational nootbooks\nLanguage-specific tools to enable interactive or “live” notebooks:\nJupyterLabs, RMarkdown, Google Colab, Matlab Live Scripts, Wolfram, see more in Wikipedia\nQuarto: Python, R, Julia and Observable"
+    "section": "Notebooks can be used for",
+    "text": "Notebooks can be used for\n\n\n\nResearch\n\narticles, reports\n\n\npresentations\n\n\nbooks, PhD thesis\n\n\nwebsites, interactive dashboards\n\n\nblog posts\n\n\n\nTeaching\n\nlab documents\n\n\npresentations\n\n\ntextbooks, manuals\n\n\nwebsites, interactive materials\n\n\nblog posts"
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#computarionbal-notebooks",
-    "href": "materials/01-intro-slides/index.html#computarionbal-notebooks",
+    "objectID": "materials/01-intro-slides/index.html#how-many-tools-do-you-use-to-produce-these-types-of-results",
+    "href": "materials/01-intro-slides/index.html#how-many-tools-do-you-use-to-produce-these-types-of-results",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Computarionbal notebooks",
-    "text": "Computarionbal notebooks\nhttps://mine.quarto.pub/quarto-manuscripts-rmed/#/title-slide\nhttps://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html"
+    "section": "How many tools do you use to produce these types of results?",
+    "text": "How many tools do you use to produce these types of results?"
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#hello-quarto",
-    "href": "materials/01-intro-slides/index.html#hello-quarto",
+    "objectID": "materials/01-intro-slides/index.html#what-is-in-a-notebook",
+    "href": "materials/01-intro-slides/index.html#what-is-in-a-notebook",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Hello Quarto",
-    "text": "Hello Quarto\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc.\nIt’s the ‘new generation’ of R Markdown, designed to work multiple programming languages + tools in an aligned way.\nQuarto can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more."
+    "section": "What is in a notebook?",
+    "text": "What is in a notebook?\n\n\nA notebook is a (cloud-based/local) dynamic document composed of cells, which is used for literate programming\nEach cell may contain:\n\nnarrative/text/documentation, or\nexecutable code, or\nresults as code output (charts, tables, plots, maps, …)"
+  },
+  {
+    "objectID": "materials/01-intro-slides/index.html#what-is-in-a-quarto-notebook",
+    "href": "materials/01-intro-slides/index.html#what-is-in-a-quarto-notebook",
+    "title": "01 Hello Quarto Notebooks",
+    "section": "What is in a Quarto notebook?",
+    "text": "What is in a Quarto notebook?\n\n\nA Quarto notebook is a (cloud-based/local) dynamic document (.qmd) composed of cells, which is used for literate programming\nEach cell may contain:\n\nnarrative/text/documentation in Markdown format, or\nexecutable code (R, Python, Julia and Observable), or\nresults as code output (charts, tables, plots, maps, …)"
+  },
+  {
+    "objectID": "materials/01-intro-slides/index.html#quarto-.qmd",
+    "href": "materials/01-intro-slides/index.html#quarto-.qmd",
+    "title": "01 Hello Quarto Notebooks",
+    "section": "Quarto (.qmd)",
+    "text": "Quarto (.qmd)\nQuarto is an open-source scientific and technical publishing system built on Pandoc, and can:\n\n\nbe authored in your favourite code editor\nrender from qmd or Jupyter notebook to PDF, Word, HTML, slides, web pages, blog posts, books, etc.\nexecute code in R, Python, Julia and Observable\napply journal styles to your outputs with Quarto extensions\npublish to GitHub Pages, Netlify, etc.\norchestrate multiple inputs and outputs with Quarto projects"
   },
   {
     "objectID": "materials/02-demo-template/index.html",

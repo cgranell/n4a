@@ -368,8 +368,11 @@ Carlos Granell
 <h1>What do <em>Notebooks</em> mean?</h1>
 
 </section>
-<section id="why-do-scientists-use-notebooks" class="slide level2">
+<section id="why-do-scientists-use-notebooks" class="slide level2 center">
 <h2>Why do scientists use notebooks?</h2>
+</section>
+<section id="fields-notes" class="slide level2">
+<h2>Fields notes</h2>
 <div class="columns">
 <div class="column">
 <p>Handwritten field notebook is a traditional research tool in science</p>
@@ -440,9 +443,23 @@ Carlos Granell
 <aside><div>
 <p><span class="citation" data-cites="canfield2011">(<a href="#/references" role="doc-biblioref" onclick="">Canfield 2011</a>)</span></p>
 </div></aside></section>
-<section id="michael-faradays-use-of-notebooks-tweney2015" class="slide level2">
-<h2>Michael Faraday’s use of notebooks <span class="citation" data-cites="tweney2015">(<a href="#/references" role="doc-biblioref" onclick="">Tweney and Ayala 2015</a>)</span></h2>
-</section>
+<section id="faradays-use-of-notebooks" class="slide level2">
+<h2>Faraday’s use of notebooks</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li><p>Faraday recorded roughly 30,000 experiments</p></li>
+<li><p><strong>Laboratory notebooks</strong>, idea books, loose slips, retrieval sheets, work sheets</p></li>
+<li><p>Notebooks numbered from 1 (Aug 1832) to 16,041 (Mar 1860)</p></li>
+</ul>
+</div><div class="column fragment">
+<p><img data-src="https://journals.sagepub.com/cms/10.1177/1750698015587149/asset/images/large/10.1177_1750698015587149-fig5.jpeg"></p>
+</div>
+</div>
+
+<aside><div>
+<p><span class="citation" data-cites="tweney2015">(<a href="#/references" role="doc-biblioref" onclick="">Tweney and Ayala 2015</a>)</span></p>
+</div></aside></section>
 <section id="field-notebook-needs-improvement" class="slide level2 center">
 <h2>Field notebook needs improvement?</h2>
 </section>
@@ -466,6 +483,24 @@ Carlos Granell
 <aside><div>
 <p><a href="http://www.literateprogramming.com/">literateprogramming.com</a></p>
 </div></aside></section>
+<section id="electronic-documents-give-reproducible-research-a-new-meaning" class="slide level2">
+<h2>Electronic documents give reproducible research a new meaning</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li><p>Merge publication with underlying computational analysis</p></li>
+<li><p>Executable digital notebook</p></li>
+<li><p>Be open &amp; help others</p></li>
+<li><p>Document for future self</p></li>
+</ul>
+</div><div class="column fragment">
+<p><img data-src="images/Claerbout92.png" style="width:70.0%"></p>
+</div>
+</div>
+
+<aside><div>
+<p><span class="citation" data-cites="claerbout1992">(<a href="#/references" role="doc-biblioref" onclick="">Claerbout and Karrenbach 1992</a>)</span></p>
+</div></aside></section>
 <section id="dynamic-documentation" class="slide level2">
 <h2>Dynamic documentation</h2>
 <h3 id="any-time-that-the-underlying-data-analysis-or-code-change">Any time that the underlying data, analysis, or code change…</h3>
@@ -482,85 +517,167 @@ Carlos Granell
 <div class="r-fit-text">
 <div class="fragment fade-in" data-fragment-index="1">
 <div class="fragment highlight-blue" data-fragment-index="1">
-<p>Constant change</p>
+<p>Constant content change</p>
 </div>
 </div>
 </div>
 </section>
-<section id="advantages" class="slide level2">
-<h2>Advantages</h2>
-<p><strong>(1) Eliminate human error in copying and pasting results</strong></p>
-<p><em>We found that half of all published psychology papers that use null-hypothesis significance testing (NHST) contained at least one p-value that was inconsistent with its test statistic and degrees of freedom. One in eight papers contained a grossly inconsistent p-value that may have affected the statistical conclusion</em> <em>(<a href="https://doi.org/10.3758/s13428-015-0664-2">Nuijten et al., 2016</a>)</em></p>
+<section id="advantages-source" class="slide level2">
+<h2>Advantages (<a href="https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html">source</a>)</h2>
+<h3 id="eliminate-human-error-in-copying-and-pasting-results">(1) Eliminate human error in copying and pasting results</h3>
+<blockquote>
+<p>We found that half of all published psychology papers that use null-hypothesis significance testing (NHST) contained at least one p-value that was inconsistent with its test statistic and degrees of freedom. One in eight papers contained a grossly inconsistent p-value that may have affected the statistical conclusion</p>
+</blockquote>
+<p><span class="citation" data-cites="nuijten2015">(<a href="#/references" role="doc-biblioref" onclick="">Nuijten et al. 2015</a>)</span></p>
 </section>
-<section id="advantages-1" class="slide level2">
-<h2>Advantages</h2>
-<p><strong>(2) Easy revisions and specification of desired figures and tables</strong></p>
-<p><em>When revisions are requested, one might have to tweak tables and figures by hand constantly, leading to a major incentive never to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in a paper.</em></p>
+<section id="advantages-source-1" class="slide level2">
+<h2>Advantages (<a href="https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html">source</a>)</h2>
+<h3 id="easy-revisions-and-specification-of-desired-figures-and-tables">(2) Easy revisions and specification of desired figures and tables</h3>
+<blockquote>
+<p>When revisions are requested, one may have to constantly modify tables and figures by hand, which creates a strong incentive not to rerun analyses because it would mean re-pasting and re-illustrating all the numbers and figures in an article.</p>
+</blockquote>
 </section>
-<section id="advantages-2" class="slide level2">
-<h2>Advantages</h2>
-<p><strong>(3) Promote computational reproducibility </strong></p>
-<ul>
-<li><p>Easy verification and replication of research findings</p></li>
-<li><p>While programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time.</p></li>
-</ul>
+<section id="advantages-source-2" class="slide level2">
+<h2>Advantages (<a href="https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html">source</a>)</h2>
+<h3 id="promote-computational-reproducibility">(3) Promote computational reproducibility</h3>
+<blockquote>
+<p>Easy verification and replication of research findings</p>
+</blockquote>
+<div class="fragment fade-in">
+<blockquote>
+<p>While programming environments may seem counter-intuitive for writing papers, they ultimately prevent mistakes and save time.</p>
+</blockquote>
+</div>
 </section>
-<section id="advantatges" class="slide level2">
-<h2>Advantatges</h2>
-<p><span class="citation" data-cites="pimentel2019">(<a href="#/references" role="doc-biblioref" onclick="">Pimentel et al. 2019</a>)</span></p>
-</section>
-<section id="electronic-documents-give-reproducible-research-a-new-meaning-claerbout1992" class="slide level2">
-<h2>Electronic documents give reproducible research a new meaning <span class="citation" data-cites="claerbout1992">(<a href="#/references" role="doc-biblioref" onclick="">Claerbout and Karrenbach 1992</a>)</span></h2>
+<section id="advantages-save-time" class="slide level2">
+<h2>Advantages: Save time?</h2>
+<p>No more time is spent doing reproducible science with notebooks</p>
 <div class="columns">
-<div class="column">
-<ul>
-<li><p>Merge publication with underlying computational analysis</p></li>
-<li><p>Executable digital notebook</p></li>
-<li><p>Be open &amp; help others</p></li>
-<li><p>Document for future self</p></li>
-</ul>
-</div><div class="column fragment">
-<p><img data-src="images/Claerbout92.png" style="width:60.0%"></p>
+<div class="column fragment" style="width:30%;">
+<!-- -->
+<h3 id="it-just-reallocates-time-where-you-spend-it.">It just <em>reallocates</em> time where you spend it.</h3>
+</div><div class="column fragment" style="width:70%;">
+<p><img data-src="https://mfr.osf.io/export?url=https://osf.io/download/ftkq8/?direct=%26mode=render&amp;format=2400x2400.jpeg"></p>
 </div>
 </div>
-</section>
-<section id="computational-nootbooks" class="slide level2">
-<h2>Computational nootbooks</h2>
+
+<aside><div>
+<p><span class="citation" data-cites="quintana2020">(<a href="#/references" role="doc-biblioref" onclick="">Quintana 2020</a>)</span></p>
+</div></aside></section>
+<section id="current-state-of-affairs-source" class="slide level2">
+<h2>Current state of affairs (<a href="https://mine.quarto.pub/quarto-manuscripts-rmed/#/title-slide">source</a>)</h2>
+<p>Most computational science is <strong>born in notebooks</strong></p>
 <div>
 <ul>
-<li class="fragment"><p>A computational notebook is a (cloud-based/local) <strong>editor</strong> composed of cells, which is used for <strong>literate programming</strong></p></li>
-<li class="fragment"><p>Each cell may contain:</p>
-<ul>
-<li class="fragment">narrative/text/documentation, or</li>
-<li class="fragment">executable code (python, R, …), or</li>
-<li class="fragment">results as code output (charts, tables, plots, maps, …)</li>
-</ul></li>
+<li class="fragment">Peer-review and publication workflows <strong>don’t support notebooks</strong> as research outputs</li>
+<li class="fragment">The more complex scenarios involve a lot of <strong>manual handling</strong> to bring the project to journal submission</li>
+<li class="fragment">Often during this process <strong>reproducibility is lost</strong>, or takes second seat to the formatting requirements</li>
+<li class="fragment">Final submission <strong>rarely captures all computations</strong>, which are, at best, relegated to supplementary materials</li>
 </ul>
 </div>
+<p>and <del>dies</del> <strong>ends in PDF or Word documents</strong></p>
 </section>
-<section id="computational-nootbooks-1" class="slide level2">
-<h2>Computational nootbooks</h2>
-<p>Language-specific tools to enable interactive or “live” notebooks:</p>
-<p><a href="https://jupyter.org/">JupyterLabs</a>, <a href="https://rmarkdown.rstudio.com/">RMarkdown</a>, <a href="https://colab.research.google.com/">Google Colab</a>, <a href="https://es.mathworks.com/help/matlab/live-scripts-and-functions.html">Matlab Live Scripts</a>, <a href="https://www.wolfram.com/computational-notebooks/">Wolfram</a>, see more in <a href="https://en.wikipedia.org/wiki/Notebook_interface">Wikipedia</a></p>
-<p><a href="https://quarto.org/">Quarto</a>: Python, R, Julia and Observable</p>
-</section>
-<section id="computarionbal-notebooks" class="slide level2">
-<h2>Computarionbal notebooks</h2>
-<p>https://mine.quarto.pub/quarto-manuscripts-rmed/#/title-slide</p>
-<p>https://utrechtuniversity.github.io/workshop-reproducible-manuscripts/introduction.html</p>
+<section id="what-if-notebooks-became-main-drivers-of-research-from-the-initial-conception-to-the-journal-submission-stage" class="slide level2 center">
+<h2>What if notebooks became <em>main drivers of research</em>, from the initial conception to the journal submission stage?</h2>
 </section></section>
 <section>
 <section id="what-do-notebooks-for-academics-mean" class="title-slide slide level1 center" data-background-color="#4f6952">
 <h1>What do <em>Notebooks for Academics</em> mean?</h1>
 
 </section>
-<section id="hello-quarto" class="slide level2">
-<h2>Hello Quarto</h2>
+<section id="notebooks-can-be-used-for" class="slide level2">
+<h2>Notebooks can be used for</h2>
+<div class="columns">
+<div class="column fragment">
+<!-- -->
+<h3 id="research">Research</h3>
+<div class="fragment fade-in">
+<p>articles, reports</p>
+</div>
+<div class="fragment fade-in">
+<p>presentations</p>
+</div>
+<div class="fragment fade-in">
+<p>books, PhD thesis</p>
+</div>
+<div class="fragment fade-in">
+<p>websites, interactive dashboards</p>
+</div>
+<div class="fragment fade-in">
+<p>blog posts</p>
+</div>
+</div><div class="column fragment">
+<!-- -->
+<h3 id="teaching">Teaching</h3>
+<div class="fragment fade-in">
+<p>lab documents</p>
+</div>
+<div class="fragment fade-in">
+<p>presentations</p>
+</div>
+<div class="fragment fade-in">
+<p>textbooks, manuals</p>
+</div>
+<div class="fragment fade-in">
+<p>websites, interactive materials</p>
+</div>
+<div class="fragment fade-in">
+<p>blog posts</p>
+</div>
+</div>
+</div>
+</section>
+<section id="how-many-tools-do-you-use-to-produce-these-types-of-results" class="slide level2 center">
+<h2>How many tools do you use to produce these types of results?</h2>
+</section></section>
+<section>
+<section id="hello-quarto" class="title-slide slide level1 center" data-background-color="#4f6952">
+<h1>Hello Quarto</h1>
+<div class="fragment">
+<p>One source, many output formats</p>
+</div>
+</section>
+<section id="what-is-in-a-notebook" class="slide level2">
+<h2>What is in a notebook?</h2>
+<div>
 <ul>
-<li><p>Quarto® is an open-source scientific and technical publishing system built on Pandoc.</p></li>
-<li><p>It’s the ‘new generation’ of R Markdown, designed to work multiple programming languages + tools in an aligned way.</p></li>
-<li><p>Quarto can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.</p></li>
+<li class="fragment"><p>A notebook is a (cloud-based/local) <strong>dynamic document</strong> composed of cells, which is used for <strong>literate programming</strong></p></li>
+<li class="fragment"><p>Each cell may contain:</p>
+<ul>
+<li class="fragment">narrative/text/documentation, or</li>
+<li class="fragment">executable code, or</li>
+<li class="fragment">results as code output (charts, tables, plots, maps, …)</li>
+</ul></li>
 </ul>
+</div>
+</section>
+<section id="what-is-in-a-quarto-notebook" class="slide level2">
+<h2>What is in a <code>Quarto</code> notebook?</h2>
+<div>
+<ul>
+<li class="fragment"><p>A <code>Quarto</code> notebook is a (cloud-based/local) <strong>dynamic document</strong> (<code>.qmd</code>) composed of cells, which is used for <strong>literate programming</strong></p></li>
+<li class="fragment"><p>Each cell may contain:</p>
+<ul>
+<li class="fragment">narrative/text/documentation in <strong>Markdown</strong> format, or</li>
+<li class="fragment">executable code (R, Python, Julia and Observable), or</li>
+<li class="fragment">results as code output (charts, tables, plots, maps, …)</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="quarto-.qmd" class="slide level2">
+<h2>Quarto (<code>.qmd</code>)</h2>
+<p><a href="https://quarto.org/">Quarto</a> is an open-source scientific and technical publishing system built on <a href="https://pandoc.org/">Pandoc</a>, and can:</p>
+<div>
+<ul>
+<li class="fragment"><strong>be authored</strong> in your favourite code editor</li>
+<li class="fragment"><strong>render</strong> from <code>qmd</code> or Jupyter notebook to PDF, Word, HTML, slides, web pages, blog posts, books, etc.</li>
+<li class="fragment"><strong>execute</strong> code in R, Python, Julia and Observable</li>
+<li class="fragment"><strong>apply</strong> journal styles to your outputs with Quarto extensions</li>
+<li class="fragment"><strong>publish</strong> to GitHub Pages, Netlify, etc.</li>
+<li class="fragment"><strong>orchestrate</strong> multiple inputs and outputs with Quarto projects</li>
+</ul>
+</div>
 </section></section>
 <section id="references" class="title-slide slide level1 unnumbered smaller scrollable">
 <h1>References</h1>
@@ -579,8 +696,11 @@ Claerbout, JF, and M Karrenbach. 1992. <span>“Electronic Documents Give Reprod
 <div id="ref-knuth1984" class="csl-entry" role="listitem">
 Knuth, DE. 1984. <span>“Literate Programming.”</span> <em>The Computer Journal</em> 11 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
 </div>
-<div id="ref-pimentel2019" class="csl-entry" role="listitem">
-Pimentel, João Felipe, Leonardo Murta, Vanessa Braganholo, and Juliana Freire. 2019. <span>“A Large-Scale Study about Quality and Reproducibility of Jupyter Notebooks.”</span> In <em>2019 IEEE/ACM 16th International Conference on Mining Software Repositories (MSR)</em>, 507–17. <a href="https://doi.org/10.1109/MSR.2019.00077">https://doi.org/10.1109/MSR.2019.00077</a>.
+<div id="ref-nuijten2015" class="csl-entry" role="listitem">
+Nuijten, Michèle B., Chris H. J. Hartgerink, Marcel A. L. M. van Assen, Sacha Epskamp, and Jelte M. Wicherts. 2015. <span>“The Prevalence of Statistical Reporting Errors in Psychology (1985–2013).”</span> <em>Behavior Research Methods</em> 48 (4): 1205–26. <a href="https://doi.org/10.3758/s13428-015-0664-2">https://doi.org/10.3758/s13428-015-0664-2</a>.
+</div>
+<div id="ref-quintana2020" class="csl-entry" role="listitem">
+Quintana, Daniel. 2020. <span>“Five Things about Open and Reproducible Science That Every Early Career Researcher Should Know.”</span> Open Science Framework. <a href="https://doi.org/10.17605/OSF.IO/DZTVQ">https://doi.org/10.17605/OSF.IO/DZTVQ</a>.
 </div>
 <div id="ref-tweney2015" class="csl-entry" role="listitem">
 Tweney, Ryan D, and Christopher D Ayala. 2015. <span>“Memory and the Construction of Scientific Meaning: Michael Faraday’s Use of Notebooks and Records.”</span> <em>Memory Studies</em> 8 (4): 422–39. <a href="https://doi.org/10.1177/1750698015587149">https://doi.org/10.1177/1750698015587149</a>.
