@@ -288,7 +288,7 @@ and ~~dies~~ **ends in PDF or Word documents**
 
 # What do *Notebooks for Academics* mean? {background-color="#4f6952"}
 
-## Notebooks can be used for
+## Academics can use notebooks for
 
 :::: {.columns}
 
@@ -361,13 +361,13 @@ One source, many output formats
 
 
 ::: {.incremental}
--   A notebook is a (cloud-based/local) **dynamic document** composed of cells, which is used for **literate programming**
+A notebook is a (cloud-based/local) **dynamic document** composed of cells, which is used for **literate programming**
 
--   Each cell may contain:
+Each cell may contain:
 
-    - narrative/text/documentation, or
-    - executable code, or 
-    - results as code output (charts, tables, plots, maps, ...)
+- narrative/text/documentation, or
+- executable code, or 
+- results as code output (charts, tables, plots, maps, ...)
 
 ::: 
 
@@ -375,13 +375,13 @@ One source, many output formats
 
 
 ::: {.incremental}
--   A `Quarto` notebook is a (cloud-based/local) **dynamic document** (`.qmd`) composed of cells, which is used for **literate programming**
+A `Quarto` notebook is a (cloud-based/local) **dynamic document** (`.qmd`) composed of cells, which is used for **literate programming**
 
--   Each cell may contain:
+Each cell may contain:
 
-    - narrative/text/documentation in **Markdown** format, or
-    - executable code (R, Python, Julia and Observable), or 
-    - results as code output (charts, tables, plots, maps, ...)
+- narrative/text/documentation in **Markdown** format, or
+- executable code (R, Python, Julia and Observable), or 
+- results as code output (charts, tables, plots, maps, ...)
 
 ::: 
 

@@ -11,14 +11,14 @@
     "href": "extras.html",
     "title": "Additional materials",
     "section": "",
-    "text": "If you want to expand your knowledge about Quarto.\nPublish and Share with Quarto :: CHEATSHEET\nQuarto for Reproducible Medical Manuscripts\nhttps://mine.quarto.pub/quarto-manuscripts-rmed/#/title-slide\nQuarto for Scientists\nNotebooks Now!\nOpenscapes - Making shareable documents with Quarto: Create open-source tutorials, onboarding docs, and much more\nNASA Earthdata Cloud Cookbook\nWriting Reproducible Manuscripts in R & Python, by Research Data Management Support, Utrecht University\nTechnical Writing and Publishing Data-Rich Articles with Quarto, A Walk-Through of Quarto, a New Publishing Tool for Jupyter notebook"
+    "text": "If you want to expand your knowledge about Quarto.\nPublish and Share with Quarto :: CHEATSHEET\nQuarto for Reproducible Medical Manuscripts\nQuarto for Scientists\nNotebooks Now!\nOpenscapes - Making shareable documents with Quarto: Create open-source tutorials, onboarding docs, and much more\nNASA Earthdata Cloud Cookbook\nWriting Reproducible Manuscripts in R & Python, by Research Data Management Support, Utrecht University\nTechnical Writing and Publishing Data-Rich Articles with Quarto, A Walk-Through of Quarto, a New Publishing Tool for Jupyter notebook"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Notebooks for Academics'24",
     "section": "",
-    "text": "01 Hello Quarto Notebooks\n\n\n6 min\n\n\n\nslides\n\n\n\nExpand the use of notebooks to various types of academic activities\n\n\n\n\n\n\n\n\n\n\n\n\n\n02 Quarto Document and Presentation\n\n\n3 min\n\n\n\ndemo\n\n\n\nNotebook demo based on the ‘Quarto document publishing with RStudio’ template using Posit Cloud\n\n\n\n\n\n\n\n\n\n\n\n\n\n03 Quarto Document using plamerpenguins\n\n\n5 min\n\n\n\nguided-exercise\n\n\n\npalmerpenguins is a great dataset for data exploration & visualization\n\n\n\n\n\n\n\n\n\n\n\n\n\n04 Scholarly articles\n\n\n1 min\n\n\n\nguided-exercise\n\n\nexercise\n\n\n\nYAML metadata keys for scholarly articles\n\n\n\n\n\n\n\nNo matching items"
+    "text": "01 Hello Quarto Notebooks\n\n\n5 min\n\n\n\nslides\n\n\n\nExpand the use of notebooks to various types of academic activities\n\n\n\n\n\n\n\n\n\n\n\n\n\n02 Quarto Document and Presentation\n\n\n3 min\n\n\n\ndemo\n\n\n\nNotebook demo based on the ‘Quarto document publishing with RStudio’ template using Posit Cloud\n\n\n\n\n\n\n\n\n\n\n\n\n\n03 Quarto Document using plamerpenguins\n\n\n5 min\n\n\n\nguided-exercise\n\n\n\npalmerpenguins is a great dataset for data exploration & visualization\n\n\n\n\n\n\n\n\n\n\n\n\n\n04 Scholarly articles\n\n\n1 min\n\n\n\nguided-exercise\n\n\nexercise\n\n\n\nYAML metadata keys for scholarly articles\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "LICENSE.html",
@@ -161,11 +161,11 @@
     "text": "What if notebooks became main drivers of research, from the initial conception to the journal submission stage?"
   },
   {
-    "objectID": "materials/01-intro-slides/index.html#notebooks-can-be-used-for",
-    "href": "materials/01-intro-slides/index.html#notebooks-can-be-used-for",
+    "objectID": "materials/01-intro-slides/index.html#academics-can-use-notebooks-for",
+    "href": "materials/01-intro-slides/index.html#academics-can-use-notebooks-for",
     "title": "01 Hello Quarto Notebooks",
-    "section": "Notebooks can be used for",
-    "text": "Notebooks can be used for\n\n\n\nResearch\n\narticles, reports\n\n\npresentations\n\n\nbooks, PhD thesis\n\n\nwebsites, interactive dashboards\n\n\nblog posts\n\n\n\nTeaching\n\nlab documents\n\n\npresentations\n\n\ntextbooks, manuals\n\n\nwebsites, interactive materials\n\n\nblog posts"
+    "section": "Academics can use notebooks for",
+    "text": "Academics can use notebooks for\n\n\n\nResearch\n\narticles, reports\n\n\npresentations\n\n\nbooks, PhD thesis\n\n\nwebsites, interactive dashboards\n\n\nblog posts\n\n\n\nTeaching\n\nlab documents\n\n\npresentations\n\n\ntextbooks, manuals\n\n\nwebsites, interactive materials\n\n\nblog posts"
   },
   {
     "objectID": "materials/01-intro-slides/index.html#how-many-tools-do-you-use-to-produce-these-types-of-results",
@@ -179,14 +179,14 @@
     "href": "materials/01-intro-slides/index.html#what-is-in-a-notebook",
     "title": "01 Hello Quarto Notebooks",
     "section": "What is in a notebook?",
-    "text": "What is in a notebook?\n\n\nA notebook is a (cloud-based/local) dynamic document composed of cells, which is used for literate programming\nEach cell may contain:\n\nnarrative/text/documentation, or\nexecutable code, or\nresults as code output (charts, tables, plots, maps, …)"
+    "text": "What is in a notebook?\n\nA notebook is a (cloud-based/local) dynamic document composed of cells, which is used for literate programming\nEach cell may contain:\n\nnarrative/text/documentation, or\nexecutable code, or\nresults as code output (charts, tables, plots, maps, …)"
   },
   {
     "objectID": "materials/01-intro-slides/index.html#what-is-in-a-quarto-notebook",
     "href": "materials/01-intro-slides/index.html#what-is-in-a-quarto-notebook",
     "title": "01 Hello Quarto Notebooks",
     "section": "What is in a Quarto notebook?",
-    "text": "What is in a Quarto notebook?\n\n\nA Quarto notebook is a (cloud-based/local) dynamic document (.qmd) composed of cells, which is used for literate programming\nEach cell may contain:\n\nnarrative/text/documentation in Markdown format, or\nexecutable code (R, Python, Julia and Observable), or\nresults as code output (charts, tables, plots, maps, …)"
+    "text": "What is in a Quarto notebook?\n\nA Quarto notebook is a (cloud-based/local) dynamic document (.qmd) composed of cells, which is used for literate programming\nEach cell may contain:\n\nnarrative/text/documentation in Markdown format, or\nexecutable code (R, Python, Julia and Observable), or\nresults as code output (charts, tables, plots, maps, …)"
   },
   {
     "objectID": "materials/01-intro-slides/index.html#quarto-.qmd",

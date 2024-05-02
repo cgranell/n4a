@@ -10,7 +10,6 @@ If you want to expand your knowledge about Quarto.
 
 [Quarto for Reproducible Medical Manuscripts](https://quarto.org/docs/blog/posts/2024-04-01-manuscripts-rmedicine/)
 
-https://mine.quarto.pub/quarto-manuscripts-rmed/#/title-slide
 
 [Quarto for Scientists](https://qmd4sci.njtierney.com/)
 
