@@ -1,0 +1,87 @@
+---
+title: "05 Examples elsewhere"
+subtitle: "Notebooks for Academics"
+description: "Gallery of research and teaching materials in Quarto format"
+author: "Carlos Granell"
+date: last-modified
+date-format: "MMM D, YYYY"
+categories: [guided-exercise]
+image: featured.jpeg
+fields: [image, title, subtitle, reading-time, categories, description, date, abstract]
+code-overflow: wrap
+---
+
+
+### Documents
+
+::: {.callout-tip}
+## Usage
+
+computational notebooks, technical reports, blog entries, etc.
+
+:::
+
+
+[How to embed interactive content in webpages with Quarto using Bokeh, 3DMol.js and NGL](https://www.valencekjell.com/posts/2022-08-13-interactive/), Kjell Jorner, ETH Zurich.
+
+
+### Presentations
+
+::: {.callout-tip}
+## Usage
+
+Usages: conference presentations, talks, lectures
+
+:::
+
+
+[Quarto: A Not So Gentle Introduction](https://m.canouil.dev/gentle-intro-to-quarto/#/title-slide), Mickaël Canouil
+
+[Automated visualisation of experimental designs](https://emitanaka.org/slides/AASC2022/#/title-slide), Emi Tanaka. Mosash University
+
+[Using Quarto for Making and Organizing Teaching Materials](https://maria.quarto.pub/using-quarto-for-making-and-organizing-teaching-materials/#/title-slide), Maria Tackett, Duke University
+
+### Websites 
+
+::: {.callout-tip}
+## Usage
+
+course websites, seminar website, workshop websites, research group websites, personal websites
+:::
+
+[STA 313: Advanced Data Visualization](https://vizdata.org/),  Mine Çetinkaya-Rundel, Duke University
+
+[PSYC 2530 Introductory Cognitive Psychology](https://www.crumplab.com/cognition/), Matthew Crump, Brooklyn College of CUNY
+
+[LSE DS105 - Data for Data Science](https://lse-dsi.github.io/DS105/), Jon Cardoso-Silva, LSE
+
+[LSE DS101 -- Fundamentals of Data Science](https://lse-dsi.github.io/DS101/), Jon Cardoso-Silva, LSE
+
+### Textbooks
+
+[ggplot2: Elegant Graphics for Data Analysis (3e)](https://ggplot2-book.org/)
+
+[Python for Data Analysis, 3E](https://wesmckinney.com/book/)
+
+### Reproducible manuscripts
+
+::: {.callout-tip}
+## Usage
+
+journal articles, PhD thesis, Master thesis
+:::
+
+[A Randomized Trial of Rectal Indomethacin to Prevent Post-ERCP Pancreatitis](https://mine-cetinkaya-rundel.github.io/indo-rct/)
+
+
+::: {.callout-tip}
+## Usage
+
+dashboards
+:::
+
+
+### Interactive content
+
+[Housing Market at a Glance](https://ivelasq.github.io/mortgage-dashboard/#)
+
